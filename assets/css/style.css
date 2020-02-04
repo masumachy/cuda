@@ -1,0 +1,450 @@
+/* Table of contents
+====================
+
+0. Base Css
+01. Common css
+02. Grid Css
+03. Top part css
+04. Button part css 
+05. section-title part css
+06. Banner part css
+07. services part css
+08. our team part css
+09. Skill part css
+10. portfolio part css
+11. About us part css
+12. Contact us part css
+13. Copyright part css
+*/
+
+/* Base CSS */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+@import url('<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700,700i,900&display=swap" rel="stylesheet">');
+/* 01. Common Css */
+body{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+a{
+    color:#333;
+    text-decoration:none;
+}
+ul{
+    list-style:none;
+}
+img{
+    max-width:100%;
+    vertical-align: middle;
+}
+
+.text-center{
+    text-align:center;
+}
+.text-left{
+    text-align:left;
+}
+.text-right{
+    text-align:right;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+  margin-top: 0px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: normal;
+  line-height: 1.2; 
+}
+p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #333;
+    margin-bottom: 15px; 
+}
+
+::selection {
+    background: #222;
+    color: #ffffff;
+    text-shadow: none; 
+}
+
+.mt-100{
+    margin-top:100px;
+}
+.mr-100{
+    margin-right:100px;
+}
+.mb-100{
+    margin-bottom:100px;
+}
+.ml-100{
+    margin-left:100px;
+}
+
+.pt-100{
+    padding-top:100px;
+}
+.pr-100{
+    padding-right:100px;
+}
+.pb-100{
+    padding-bottom:100px;
+}
+.pl-100{
+    padding-left:100px;
+}
+.pb-75{
+    padding-bottom: 75px;
+}
+
+/* 02. Grid Css */
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.row{
+    margin: 0 -15px;
+}
+.row:before, .row:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.67%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.33%;
+}
+.col-5{
+    width: 41.67%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.33%;
+}
+.col-8{
+    width: 66.67%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.33%;
+}
+.col-11{
+    width: 91.67%;
+}
+.col-12{
+    width: 100%;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+    float: left;
+    padding: 0 15px;
+}
+
+
+/* 03. Top part css*/
+ .header-area {
+     background-color: #87509c; 
+     padding: 30px 0;
+     width: 100%;
+     position: fixed;
+ }
+.menu ul li {
+    display: inline-block;
+}
+.menu ul li a {
+    margin-top: 10px;
+    margin-left: 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    display: block;
+    color: white;
+}
+.menu ul li a:hover{
+    background-color: #643a79;
+    padding: 10px 15px;
+}
+/* 04. Button part css */
+.box-btn{
+    color: #fff;
+	text-transform: uppercase;
+	padding: 20px 60px;
+    display: inline-block;
+    border-bottom: 5px solid;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 18px;
+}
+/* 05. section-title part css*/
+.section-title h3 {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    font-size: 40px;
+    color: #f8f5f5;
+    font-weight: 700;
+}
+.section-title h3::before {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 4px;
+    background-color: #14a58c;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 06. Banner part css*/
+.banner-area{
+    background-color: #87509c;
+    height: 570px;
+}
+.banner a{
+    background-color: #eb7d4b;
+    border-color: #c86a40;
+}
+.banner {
+    padding-top: 235px;
+    
+}
+.banner p {
+    padding-bottom: 50px;
+    font-size: 48.5px;
+    font-weight: 400;
+    line-height: 55px;
+    color: white;
+}
+
+/* 07. services part css*/
+.services-area{
+    background-color: #17c2a4;
+}
+.services-area .section-title p {
+    color: #f8f5f5;
+    margin-bottom: 60px;
+}
+.single-service h4, .ourteam h4 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+.single-service p {
+    font-weight: 300;
+    color: #fff;
+}
+
+/* 08. our team part css*/
+
+.ourteam-area{
+    background-color: #e7f1f8;
+}
+.ourteam-area .section-title h3{
+    color: #4d586f;
+} 
+.ourteam-area .section-title h3:before{
+    background-color: #c8d9e5;
+}
+.ourteam img {
+    padding-top: 60px;
+    padding-bottom: 35px;
+}
+.ourteam h4{
+    padding-bottom: 15px;
+    padding-top: 0;
+    color: #3c4761
+}
+.ourteam span {
+    display: block;
+    font-size: 16px;
+    color: #30bae7;
+}
+.ourteam p{
+    padding: 25px 0;
+}
+.ourteam i {
+    font-size: 25px;
+    background-color:#bdd1df;
+    padding: 15px;
+    margin-left: ;
+    color:#fff;
+    margin: 0px 5px;
+    border-radius: 50%;
+}
+
+/* 09. Skill part css */
+.skill-area .section-title h3:before{
+    background-color: #dfe8ed;
+}
+.skill-area .section-title h3{
+    color: #3c4761;
+}
+.skill{
+    padding-top: 50px;
+}
+.skill p {
+    text-transform: uppercase;
+    padding-top: 25px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+/* 10. portfolio part css */
+.portfolio-area{
+    background-color: #ffdd99;
+   
+}
+.portfolio-area .section-title h3::before{
+    background-color: #e5c37f;
+}
+.portfolio-area .section-title h3{
+    color: black;
+    text-transform: uppercase;
+}
+.portfolio-area .section-title ul li {
+    display: inline-block;
+  }  
+.portfolio-area .section-title ul li a {
+    display: block;
+    margin: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #ebc985;
+    padding: 10px;
+}
+.portfolio-area .section-title ul li a:hover{
+    background-color: #ffffff;
+}
+.portfolio-area a{
+    background-color: #17c2a4;
+    border-color: #14a58c;
+    display: inline-block;
+    margin-top: 35px;
+}
+.single-portfolio p {
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+.single-portfolio img {
+    margin-top: 30px;
+}
+/* 11. About us part css */
+
+.about-area{
+    background-color: #d74680;
+}
+.about-area .section-title h3::before{
+    background-color: #b73c6d;
+}
+.about-area .section-title p{
+    color: #ffffff;
+}
+.about-area .single-about {
+  padding: 50px 0;
+}
+.about-area .single-about p {
+  color: #ffffff;
+  font-style: italic;
+  font-size: 20px;
+}
+.about-area .single-about h4 {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 25px;
+}
+.about-area .single-about h4 span {
+  display: block;
+  font-size: 16px;
+  text-transform: capitalize;
+  line-height: 1;
+}
+
+/* 12. Contact us part css */
+.contact-area{
+    background-color: #3c5499;
+}
+.contact-area .section-title h3:before{
+    background-color: #273a71;
+}
+.contact-area .section-title p{
+    color: #ffffff;
+}
+.contact-area .contact-form a{
+    background-color: #30bae7;
+    border-color: #299ec5;
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+.contact-area .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    height: 180px;
+    margin-top: 30px;
+}
+.contact-area .contact-form form input {
+width: 47%;
+margin: 35px 15px 10px 15px;
+padding: 15px;
+}
+.contact-area .contact-form form input[type="text"] {
+margin-left: 0;
+}
+.contact-area .contact-form form input[type="email"] {
+margin-right: 0;
+}
+.contact-area .contact-form form input {
+width: 48%;
+margin: 35px 21px 10px 21px;
+}
+
+/* 13. Copyright part css*/
+.copy-area{
+    background-color: #344b8e;
+}
+.copy-area .copy-right ul li {
+  display: inline-block;
+}
+.copy-area .copy-right ul li a {
+  display: block;
+  margin: 15px;
+  font-size: 22px; 
+  margin: 20px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.copy-area .copy-right ul li a:hover{
+    color: #30bae7;
+}
+.copy-area .copy-right p {
+  color: wheat;
+  text-transform: capitalize;
+  font-size: 20px;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+}
